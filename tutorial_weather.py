@@ -22,7 +22,7 @@ OUTPUT_PRICE_PER_MILLION_USD = 2.50
 
 
 def createModel(prompt: str):
-    """讓 Gemini 自動選擇並執行可用工具。"""
+    """讓 Gemini 選擇工具，並將 function calls 交由 Python 手動處理。"""
     response = client.models.generate_content(
         model=MODEL_NAME,
         contents=prompt,
@@ -32,6 +32,9 @@ def createModel(prompt: str):
                 function_calling_config=types.FunctionCallingConfig(
                     mode=types.FunctionCallingConfigMode.AUTO,
                 )
+            ),
+            automatic_function_calling=types.AutomaticFunctionCallingConfig(
+                disable=True
             ),
         ),
     )
@@ -144,17 +147,30 @@ def get_weather(city: str) -> dict[str, str | float]:
 
 
 TOOLS = [add_numbers, get_weather]
+TOOL_FUNCTIONS = {
+    "add_numbers": add_numbers,
+    "get_weather": get_weather,
+}
 
 
 if __name__ == "__main__":
-    test_prompts = [
-        "請計算 15.5 加 20.2。",
-        "請查詢臺北市今天的天氣。",
-    ]
-    for prompt in test_prompts:
-        print(f"\n使用者問題：{prompt}")
-        response = createModel(prompt)
-        print("Gemini 回應結果：")
-        print(response.text)
-        print("工具呼叫歷程：")
-        print(response.automatic_function_calling_history)
+    prompt = "請計算 15.5 加 20.2，並查詢臺北市今天的天氣。"
+    print(f"使用者問題：{prompt}")
+    response = createModel(prompt)
+
+    function_calls = response.function_calls or []
+    print("\nGemini 選擇的 function_calls：")
+    print(function_calls)
+    if not function_calls:
+        raise RuntimeError("模型沒有選擇任何工具。")
+
+    print("\nPython 接管並執行工具：")
+    for function_call in function_calls:
+        tool_function = TOOL_FUNCTIONS.get(function_call.name)
+        if tool_function is None:
+            raise ValueError(f"不支援的工具：{function_call.name}")
+
+        arguments = dict(function_call.args)
+        print(f"- {function_call.name}({arguments})")
+        result = tool_function(**arguments)
+        print(f"  結果：{json.dumps(result, ensure_ascii=False)}")
