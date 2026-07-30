@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.jsonl
+REACT_INDUSTRY/直營_客戶資訊/
+REACT_INDUSTRY/直營(截至20260630)_客戶資訊彙整.xlsx
