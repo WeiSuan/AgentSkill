@@ -4,3 +4,8 @@ __pycache__/
 *.jsonl
 REACT_INDUSTRY/直營_客戶資訊/
 REACT_INDUSTRY/直營(截至20260630)_客戶資訊彙整.xlsx
+REACT_INDUSTRY/.env
+REACT_INDUSTRY/.venv/
+REACT_INDUSTRY/.pytest_cache/
+REACT_INDUSTRY/__pycache__/
+REACT_INDUSTRY/logs/
