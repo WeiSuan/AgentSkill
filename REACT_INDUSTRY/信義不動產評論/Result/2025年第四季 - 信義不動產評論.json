@@ -1,0 +1,15 @@
+{
+  "report_id": "37d9e05d-011d-596e-a4fe-ea1fa506183f",
+  "source_pdf": "2025年第四季 - 信義不動產評論.pdf",
+  "prompt_version": "sinyi-real-estate-review-v1",
+  "model": "models/gemini-3.5-flash-lite",
+  "generated_at": "2026-08-06T07:52:56.617829+00:00",
+  "analysis": {
+    "source": "信義不動產評論",
+    "report_date": "2026-02-01",
+    "industry": "不動產",
+    "current_market_status": "持平",
+    "future_market_status": "好",
+    "key_summary": "信義不動產評論2025年Q4指出，雖然央行持續緊縮且銀行房貸保守使市場維持盤整格局，Q4呈現「量縮價緩跌」局面，六都移轉量較去年同期減少，但隨著信用管制與關稅政策利空逐漸淡化、銀行房貸排撥情況好轉，加上資本市場受產業利多激勵，市場信心有所回溫。購屋信心方面，看漲比例較上一季增加且看跌比例收斂。展望未來，隨著台灣經濟持續穩健成長，且2026年為選舉年，房市政策有望調整，房市信心有機會繼續改善。"
+  }
+}

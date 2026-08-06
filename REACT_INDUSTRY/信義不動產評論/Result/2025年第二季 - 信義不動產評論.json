@@ -1,0 +1,15 @@
+{
+  "report_id": "dab37821-ac6f-5eb5-8992-a2bc0f6a1586",
+  "source_pdf": "2025年第二季 - 信義不動產評論.pdf",
+  "prompt_version": "sinyi-real-estate-review-v1",
+  "model": "models/gemini-3.5-flash-lite",
+  "generated_at": "2026-08-06T07:52:43.769957+00:00",
+  "analysis": {
+    "source": "信義不動產評論",
+    "report_date": "2025-06-30",
+    "industry": "不動產",
+    "current_market_status": "壞",
+    "future_market_status": "持平",
+    "key_summary": "受央行第七波信用管制及房貸資金緊縮影響，房市動能遭壓抑，買氣下滑且房價鬆動，2025年Q2呈現「量縮價緩跌」局面。全台移轉量較去年同期大幅減少44%，房價指數季減2.39%。不過國內經濟保持穩健，預期住宅價格短期內雖持續往修正方向走，但幅度有限。"
+  }
+}

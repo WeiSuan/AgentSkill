@@ -1,0 +1,15 @@
+{
+  "report_id": "191e005e-4b59-584e-b81d-f6cd3048aa29",
+  "source_pdf": "2026年第一季 - 信義不動產評論.pdf",
+  "prompt_version": "sinyi-real-estate-review-v1",
+  "model": "models/gemini-3.5-flash-lite",
+  "generated_at": "2026-08-06T07:53:07.501742+00:00",
+  "analysis": {
+    "source": "信義不動產評論",
+    "report_date": "2026-04-22",
+    "industry": "不動產",
+    "current_market_status": "持平",
+    "future_market_status": "好",
+    "key_summary": "2026年Q1房市呈現「量縮價緩跌」的盤整格局。隨著央行信用管制調整以及銀行房貸排撥情況逐漸好轉，市場信心有所回溫，減幅較前一年收斂。大台北地區房價月指數由跌返正，年增0.2%，顯示實際房價趨向止跌回穩。展望未來，國內經濟持續穩健，選舉時間逐漸接近，房市政策有望逐步調整，2026年房市信心有機會繼續改善。"
+  }
+}

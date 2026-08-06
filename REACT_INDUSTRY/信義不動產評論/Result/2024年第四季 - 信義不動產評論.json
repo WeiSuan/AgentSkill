@@ -1,0 +1,15 @@
+{
+  "report_id": "1cab626c-0be2-5dc2-818a-a8338bace69d",
+  "source_pdf": "2024年第四季 - 信義不動產評論.pdf",
+  "prompt_version": "sinyi-real-estate-review-v1",
+  "model": "models/gemini-3.5-flash-lite",
+  "generated_at": "2026-08-06T07:51:27.499953+00:00",
+  "analysis": {
+    "source": "信義不動產評論",
+    "report_date": "2024-12-31",
+    "industry": "不動產",
+    "current_market_status": "壞",
+    "future_market_status": "持平",
+    "key_summary": "下半年受到銀行房貸額度接近滿水位及資金壓力影響，房市動能出現波動，再加上9月央行實施第七波選擇性信用管制，買氣持續萎縮，Q4逐步走向「量縮價盤」的局面。總計2024年全台移轉量為35.05萬棟，創近11年來新高。儘管看跌比例大幅增加且市場轉趨保守觀望，但在國內經濟仍強勁、通膨仍高等因素下，預計住宅價格短期內較難出現明顯的價格修正。"
+  }
+}

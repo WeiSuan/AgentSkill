@@ -1,0 +1,15 @@
+{
+  "report_id": "19e2ed0d-4314-5ca3-aec3-6aea8eb647d4",
+  "source_pdf": "2025年第三季 - 信義不動產評論.pdf",
+  "prompt_version": "sinyi-real-estate-review-v1",
+  "model": "models/gemini-3.5-flash-lite",
+  "generated_at": "2026-08-06T07:51:52.563328+00:00",
+  "analysis": {
+    "source": "信義不動產評論",
+    "report_date": "2025-09-30",
+    "industry": "不動產",
+    "current_market_status": "壞",
+    "future_market_status": "持平",
+    "key_summary": "受2024年9月央行第七波信用管制影響，房貸資金持續緊縮，房市動能受壓抑，2025年Q3市場持續盤整，呈現「量縮價緩跌」局面。六都建物買賣移轉棟數較去年同期大幅減少，購屋信心偏向保守，市場已經沒有現在不買以後會更貴的預期，屬典型買方市場。不過國內經濟仍穩健，且房市政策有些調整，預期將有助市場信心回穩，房市預料將延續盤整格局，等待年底政策方向進一步明朗。"
+  }
+}
